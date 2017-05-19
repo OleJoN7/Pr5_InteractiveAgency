@@ -1,0 +1,228 @@
+/*--------------Middle Devices----------------*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nav-header li {
+        padding: 0 14px;
+    }
+
+    .nav-header li:hover {
+        padding: 0 14px;
+    }
+
+    .work-section {
+        padding-bottom: 0;
+    }
+
+    .btn-wrap {
+        text-align: center;
+        padding-bottom: 80px;
+        padding-top: 50px;
+    }
+
+    .slider p {
+        margin-bottom: 10px;
+    }
+}
+
+/*-----------Small Devices--------------------------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-header .logo {
+        font-size: 30px;
+    }
+
+    .nav-header li {
+        padding: 0 5px;
+    }
+
+    .nav-header li:hover {
+        padding: 0 10px;
+    }
+
+    .navbar-nav > li > a {
+        font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 15px;
+    }
+
+    .nav > li > a {
+        padding: 10px 10px;
+    }
+
+    .welcome-slogan h1 {
+        font-size: 40px;
+    }
+
+    .advantage-list h2 {
+        font-size: 40px;
+    }
+
+    .advantage-list p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .work-list {
+        overflow: hidden;
+    }
+
+    .work-list li {
+        display: block;
+        width: calc(100% / 2);
+        float: left;
+    }
+
+    .btn-wrap {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+
+    .slider p {
+        font-size: 24px;
+    }
+
+    .slider .table-cell-wrap {
+        padding: 0 80px;
+    }
+
+    .coordinate-list li {
+        width: 32%;
+    }
+}
+
+/*-------Extra Small Devices-------------------*/
+
+@media (max-width: 767px) {
+    .main-header {
+        padding: 35px 0 20px 0;
+    }
+
+    .main-header .logo {
+        font-size: 26px;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 10px;
+    }
+
+    .welcome-slogan {
+        position: static;
+        transform: none;
+    }
+
+    .welcome-slogan h1 {
+        font-size: 30px;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+
+    .welcome-slogan p {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .welcome-section .scroll-icon {
+        bottom: 5%;
+    }
+
+    .welcome-slogan .main-btn {
+        padding: 10px 50px;
+    }
+
+    .navbar-toggle {
+        margin-top: 0;
+    }
+
+    .navbar-nav {
+        float: none;
+    }
+
+    .nav-header li {
+        text-align: center;
+        border-radius: 0;
+        border: none;
+        transition: .35s ease-in-out;
+    }
+
+    .nav-header li:hover {
+        border-radius: 0;
+        border: none;
+        background: rgba(73, 0, 124, .2);
+    }
+
+    .our-advantage {
+        overflow: hidden;
+        padding: 50px 0 20px;
+    }
+
+    .advantage-list li {
+        margin-bottom: 50px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .advantage-list li:first-child {
+        float: none;
+        padding: 0;
+    }
+
+    .advantage-list li:last-child {
+        float: none;
+        padding: 0;
+    }
+
+    .work-header h2 {
+        padding: 30px;
+    }
+
+    .work-list li {
+        display: block;
+        width: 100%;
+        margin-bottom: 25px;
+        padding-left: 160px;
+    }
+
+    .work-list h3 .work-link {
+        font-size: 25px;
+    }
+
+    .work-list p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .btn-wrap {
+        text-align: center;
+        padding-bottom: 0;
+        padding-top: 40px;
+    }
+
+    .coordinate-list li {
+        width: 31%;
+    }
+}
+
+@media (max-height: 420px) {
+    .nav-header li {
+        width: 18%;
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+    .nav-header li:hover {
+        padding: 0 10px;
+    }
+
+    .navbar-nav > li > a {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    .welcome-section .scroll-icon {
+        left: 10%;
+    }
+
+}

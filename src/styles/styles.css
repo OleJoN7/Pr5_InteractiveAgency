@@ -1,0 +1,588 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font: 12px Tahoma, sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+div, menu, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, legend, label, select, input, textarea, button {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    padding: 0
+}
+
+select, input, textarea, button {
+    vertical-align: middle;
+}
+
+textarea {
+    vertical-align: top;
+}
+
+:focus {
+    outline: none;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+img, fieldset {
+    border: 0;
+}
+
+img {
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a, a:link, a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FONTS----------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+@font-face {
+    font-family: "ProximaBold";
+    src: url('../fonts/proximanova/bold/proximanova-bold.ttf') format('truetype'), url('../fonts/proximanova/bold/proximanova-bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "ProximaRegular";
+    src: url('../fonts/proximanova/regular/proximanova-regular.ttf') format('truetype'), url('../fonts/proximanova/regular/proximanova-regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "ProximaLight";
+    src: url('../fonts/proximanova/light/proximanova-light.ttf') format('truetype'), url('../fonts/proximanova/light/proximanova-light.otf') format('opentype');
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+body {
+    font: 18px "ProximaRegular", sans-serif;
+}
+
+.welcome-section {
+    background: url("../images/city.png") no-repeat 50% 50%;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    max-width: 100%;
+    width: 1340px;
+    margin: 0 auto;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER + WelcomeSection---------------------*/
+/*----------------------------------------------------------------------------------*/
+.main-header {
+    padding: 55px 0 220px 0;
+    overflow: hidden;
+}
+
+.nav-header a {
+    color: #000;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.nav > li > a:hover {
+    background-color: transparent;
+}
+
+.nav-header li {
+    border-radius: 30px;
+    border: 1px solid transparent;
+    padding: 0 20px 0 20px;
+    transition: .35s ease-out;
+    margin: 0 2px;
+}
+
+.nav-header li:hover {
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 0 20px 0 20px;
+    background: rgba(73, 0, 124, .2);
+}
+
+.main-header .logo {
+    font-size: 36px;
+    display: block;
+    float: left;
+}
+
+.navbar {
+    position: static;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: #000;
+}
+
+.welcome-slogan {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.welcome-slogan h1 {
+    margin-bottom: 5px;
+    text-align: center;
+    font: 48px "ProximaBold", sans-serif;
+    padding-bottom: 20px;
+}
+
+.welcome-slogan p {
+    margin-bottom: 60px;
+    color: #949494;
+}
+
+.welcome-section .scroll-icon {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    padding-top: 55px;
+    font: 14px "ProximaLight", sans-serif;
+    color: #fff;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: url("../images/scroll.png") 50% 0 no-repeat;
+    border: none;
+}
+
+.welcome-slogan .main-btn {
+    display: inline-block;
+    background: linear-gradient(to right, #49007c, #b90084);
+    transition: .35s ease-out;
+    color: #fff;
+    padding: 20px 70px;
+    border-radius: 40px;
+    opacity: .85;
+}
+
+.welcome-slogan .main-btn:hover {
+    opacity: 1;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT-----------------------*/
+/*--------------------Advantage Section--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.our-advantage {
+    overflow: hidden;
+    padding: 140px 0 40px;
+    color: #fff;
+    background: url("../images/advantage-bg.jpg") 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.advantage-list ul {
+    overflow: hidden;
+}
+
+.advantage-list li {
+    margin-bottom: 100px;
+    width: calc(100% / 2);
+    max-width: 100%;
+    text-align: left;
+    vertical-align: top;
+}
+
+.advantage-list li:first-child {
+    float: left;
+    padding-right: 75px;
+}
+
+.advantage-list li:last-child {
+    float: right;
+    padding-left: 75px;
+}
+
+.advantage-list h2 {
+    margin-bottom: 25px;
+    font: 48px "ProximaBold", sans-serif;
+}
+
+.advantage-list p {
+    margin-bottom: 35px;
+    line-height: 30px;
+}
+
+.our-advantage .main-btn {
+    display: inline-block;
+    padding: 0 50px;
+    color: #fff;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    background: url("../images/button-bg.jpg") repeat-y;
+    line-height: 50px;
+    transition: .35s ease-out;
+    opacity: .85;
+}
+
+.our-advantage .main-btn:hover {
+    opacity: 1;
+}
+
+/*---------------------------Work section-------------------------------*/
+
+.work-section {
+    background: #fff;
+    padding-bottom: 100px;
+}
+
+.work-header h2 {
+    text-align: center;
+    font: 48px "ProximaBold", sans-serif;
+    font-weight: bold;
+    padding-bottom: 110px;
+    padding-top: 100px;
+}
+
+.work-list h3 .work-link {
+    display: inline-block;
+    font: 30px "ProximaLight", sans-serif;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.work-list p {
+    text-align: left;
+    line-height: 30px;
+    color: #b4b4b4;
+}
+
+.work-list li {
+    display: inline-block;
+    width: 49.5%;
+    margin-bottom: 75px;
+    padding-left: 160px;
+}
+
+.work-list li:nth-child(1) {
+    background: url("../images/web-design.png") 0 10px no-repeat;
+}
+
+.work-list li:nth-child(2) {
+    background: url("../images/web-app.png") 0 10px no-repeat;
+}
+
+.work-list li:nth-child(3) {
+    background: url("../images/painting.png") 0 10px no-repeat;
+}
+
+.work-list li:nth-child(4) {
+    background: url("../images/desk-app.png") 0 10px no-repeat;
+}
+
+.work-section .gradient {
+    display: inline-block;
+    background: linear-gradient(to right, #49007c, #b90084);
+    color: #fff;
+    padding: 20px 70px;
+    border-radius: 40px;
+    transition: .35s ease-in-out;
+    opacity: .85;
+}
+
+.work-section .gradient:hover {
+    opacity: 1;
+}
+
+.btn-wrap {
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 110px;
+}
+
+/*------------------------Slider section----------------------------*/
+.slider {
+    position: relative;
+}
+
+.slider ul {
+    overflow: hidden;
+}
+
+.slider li {
+    position: relative;
+    float: left;
+    width: calc(100% / 3);
+}
+
+.slider li:hover .hover-block {
+    visibility: visible;
+    opacity: 1;
+}
+
+.slider li img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.slider .hover-block {
+    visibility: hidden;
+    opacity: 0;
+    transition: .35s ease-in-out;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .63);
+    color: #fff;
+}
+
+.slider .hover-wrap {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.slider .table-cell-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.slider h4 {
+    margin-bottom: 20px;
+    font: 30px "ProximaLight", sans-serif;
+}
+
+.slider p {
+    margin-bottom: 55px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.table-cell-wrap .main-btn {
+    display: inline-block;
+    background: linear-gradient(to right, #49007c, #b90084);
+    color: #fff;
+    padding: 20px 70px;
+    border-radius: 40px;
+    opacity: .85;
+    transition: .35s ease-in-out;
+}
+
+.table-cell-wrap .main-btn:hover {
+    opacity: 1;
+}
+
+.lSAction > a {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    position: absolute;
+    top: 45%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.lSAction .lSPrev {
+    left: 0;
+    background: url('../images/left-arrow.png') 50% no-repeat;
+    opacity: .7;
+    transition: .5s ease-in-out;
+}
+
+.lSAction .lSNext {
+    right: 0;
+    background: url('../images/right-arrow.png') 50% no-repeat;
+    opacity: .7;
+    transition: .5s ease-in-out;
+}
+
+.lSAction .lSPrev:hover {
+    opacity: 1;
+}
+
+.lSAction .lSNext:hover {
+    opacity: 1;
+}
+
+/*!*--------------------------About-Us section--------------------------*!*/
+
+.about-section {
+    background: url("../images/about-us.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.about-header h2 {
+    font: 48px "ProximaBold", sans-serif;
+    color: #fff;
+    text-align: center;
+    padding-top: 115px;
+    padding-bottom: 40px;
+}
+
+.about-section p {
+    line-height: 30px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 710px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 125px;
+}
+
+.list-about-us {
+    text-align: center;
+    padding-bottom: 110px;
+}
+
+.list-about-us li {
+    display: inline-block;
+    width: 300px;
+}
+
+.foto {
+    overflow: hidden;
+    width: 135px;
+    height: 135px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+}
+
+.about-section ul p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+.about-section .text {
+    line-height: 30px;
+    color: #949494;
+}
+
+.btn-about {
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+.about-section .gradient {
+    display: inline-block;
+    background: linear-gradient(to right, #49007c, #b90084);
+    color: #fff;
+    padding: 20px 70px;
+    border-radius: 40px;
+}
+
+/*------------------MAP section----------------------------------------*/
+
+.maps {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.maps iframe {
+    width: 100%;
+    height: 600px;
+    border: 0;
+}
+
+.newMap h3 {
+    padding: 20px 0;
+}
+
+.coordinate-list {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.coordinate-list li {
+    width: 33%;
+    display: inline-block;
+}
+
+.coordinate-button {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    cursor: pointer;
+    border: 1px solid #2e6da4;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #337ab7;
+
+}
+
+#googleMap {
+    width: 100%;
+    height: 600px;
+    border: 0;
+}
+
+/*!*----------------------------------------------------------------------------------*!*/
+/*!*-------------------------------------SIDEBAR--------------------------------------*!*/
+/*!*----------------------------------------------------------------------------------*!*/
+
+/*!*----------------------------------------------------------------------------------*!*/
+/*!*-------------------------------------FOOTER---------------------------------------*!*/
+/*!*----------------------------------------------------------------------------------*!*/
+.footer p, .footer p a {
+    line-height: 30px;
+    text-align: center;
+    color: #949494;
+}
+
+.footer p:last-child {
+    padding-bottom: 580px;
+}
+
+/*!*----------------------------------------------------------------------------------*!*/
+/*!*-------------------------------------OTHER----------------------------------------*!*/
+/*----------------------------------------------------------------------------------*/
