@@ -18,8 +18,8 @@ var config = {
 
     'css': {
         'src': [
-            '../node_modules/bootstrap/dist/css/bootstrap.min.css',
-            '../node_modules/lightslider/dist/css/lightslider.min.css',
+            './node_modules/bootstrap/dist/css/bootstrap.min.css',
+            './node_modules/lightslider/dist/css/lightslider.min.css',
             './src/styles/styles.css',
             './src/styles/media.css'
         ],
@@ -28,9 +28,9 @@ var config = {
 
     'js': {
         'src': [
-            '../node_modules/jquery/dist/jquery.min.js',
-            '../node_modules/bootstrap/dist/js/bootstrap.min.js',
-            '../node_modules/lightslider/dist/js/lightslider.min.js',
+            './node_modules/jquery/dist/jquery.min.js',
+            './node_modules/bootstrap/dist/js/bootstrap.min.js',
+            './node_modules/lightslider/dist/js/lightslider.min.js',
             './src/js/*.js'
         ],
         'dest': './dist/js'
